@@ -1,0 +1,140 @@
+.section-banner {
+  max-width: 1600px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $transparent-background;
+  background-image: linear-gradient(
+      to right,
+      $transparent-background,
+      $transparent-background
+    ),
+    url(../img/banner/Headermobile.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media not all,
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        $transparent-background,
+        $transparent-background
+      ),
+      url(../img/banner/Headermobile2x.jpg);
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(
+        to right,
+        $transparent-background,
+        $transparent-background
+      ),
+      url(../img/banner/Headertablet.jpg);
+  }
+
+  @media not all,
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 481px),
+    screen and (min-resolution: 192dpi) and (min-width: 481px),
+    screen and (min-resolution: 2dppx) and (min-width: 481px) {
+    background-image: linear-gradient(
+        to right,
+        $transparent-background,
+        $transparent-background
+      ),
+      url(../img/banner/Headertablet2x.jpg);
+  }
+
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(
+        to right,
+        $transparent-background,
+        $transparent-background
+      ),
+      url(../img/banner/Headerdesktop.jpg);
+  }
+
+  @media not all,
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 769px),
+    screen and (min-resolution: 192dpi) and (min-width: 769px),
+    screen and (min-resolution: 2dppx) and (min-width: 769px) {
+    background-image: linear-gradient(
+        to right,
+        $transparent-background,
+        $transparent-background
+      ),
+      url(../img/banner/Headerdesktop2x.jpg);
+  }
+}
+
+.banner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  // width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section-banner .banner {
+  padding: 150px 15px;
+  text-align: center;
+
+  @media screen and (min-width: 356px) {
+    padding-top: 118px;
+  }
+}
+
+.banner-title {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  color: $title-text-color-white;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+/* кнопка banner */
+
+.banner-button {
+  display: inline-flex;
+  margin-bottom: 0px;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+
+  color: #ffffff;
+  background-color: #2196f3;
+
+  border: 0px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  transition: background-color $duration $timihg-function,
+    color $duration $timihg-function;
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+    background-color: #ffffff;
+  }
+}

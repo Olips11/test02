@@ -1,0 +1,110 @@
+/* section-team команда */
+
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background: #f5f4fa;
+}
+
+.team-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: $title-text-color;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+
+  & .item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.card {
+  width: 252px;
+  height: 422px;
+
+  background: $primary-background-color;
+  box-shadow: $main-shadow;
+
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  background-color: $primary-background-color;
+}
+
+.section-team-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  color: $title-text-color;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.section-team-text {
+  margin-top: 0px;
+  margin-bottom: 16px;
+
+  color: $primary-text-color;
+
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  padding-left: 0px;
+
+  .soc-list & {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+
+    transition: background-color $duration $timihg-function;
+
+    & .items:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.soc-icon {
+  background-size: 20px;
+  fill: #afb1b8;
+
+  transition: fill $duration $timihg-function;
+}
+
+.soc-list .social-icon:hover,
+.soc-list .social-icon:focus {
+  background-color: #2196f3;
+}
+
+.soc-list .social-icon:hover .soc-icon {
+  fill: #ffffff;
+}

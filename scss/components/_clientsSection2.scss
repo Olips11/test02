@@ -1,0 +1,56 @@
+/* клиенты */
+
+.section-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customers {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  color: #212121;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.customers-list {
+  display: flex;
+}
+
+.customers-list .item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition: border $duration $timihg-function;
+}
+
+.customers-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-icon {
+  fill: #afb1b8;
+
+  transition: fill $duration $timihg-function;
+}
+
+.customers-list .item a:hover,
+.customers-list .item a:focus {
+  border-color: $accent-color;
+}
+
+.customers-list .item a:hover .client-icon,
+.customers-list .item a:focus .client-icon {
+  fill: $accent-color;
+}

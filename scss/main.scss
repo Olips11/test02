@@ -1,0 +1,26 @@
+// Utils
+@import './utils/variables';
+@import './utils/mixin';
+@import './utils/breakpoints';
+
+// Base style
+@import './utils/base';
+@import './utils/placeholder';
+@import './components/container';
+
+// Header Logo
+@import './components/pageHeade';
+@import './components/logo';
+
+// // Hero section
+@import './components/hero';
+@import './components/modal';
+
+// // sections
+@import './components/advantagesSection';
+@import './components/occupationSection';
+@import './components/teamSection';
+@import './components/clientsSection';
+
+// // Footer
+@import './components/footer';

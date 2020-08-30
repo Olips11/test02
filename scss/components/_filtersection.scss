@@ -1,0 +1,64 @@
+.section-filter {
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
+}
+
+.invisible-heading {
+  display: none;
+}
+
+.section-filter .list {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+}
+
+.button-list .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button-list .item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+    margin-right: 8px;
+  }
+}
+
+.filter-button {
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+  height: 38px;
+
+  color: #212121;
+  background-color: #f5f4fa;
+
+  border: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  cursor: pointer;
+
+  transition: color $duration $timihg-function,
+    background-color $duration $timihg-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color-white;
+    background-color: $accent-color;
+  }
+
+  &.current {
+    color: $accent-color-white;
+    background: $accent-color;
+  }
+}
